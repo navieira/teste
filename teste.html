@@ -4,61 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro
-    </title>
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="scream">
+    <title>Cadastro</title>
+
 </head>
 <body>
     
 <div> 
-    <h1>Mini Horta</h1>
-    <p>Seja bem-vindo</p>
+    <h1 id="titulo">Mini Horta</h1>
+    <p id="mensagem">Seja bem-vindo:)</p>
     <br>
-    <p>Complete suas informações</p>
+    <p id="subtitulo">Complete suas informações</p>
     <br>
 </div>
 
 <form>
-    <fieldset>
-        <div>
-            <label>n°</label>
-            <input type="text", name="n°", id="n°", size="20">
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="N°">N°</label>
+            <input type="text", name="n°", id="n°", size="20" required>
         </div>
 
-        <div>
-            <label>data</label>
+        <div class="campo">
+            <label for="data">Data</label>
             <input type="date", name="date", id="date", size="20">
         </div>
 
-        <div>
-            <label>firma</label>
-            <input type="text", name="firma", id="firma", size="20">
+        <div class="campo">
+            <label for="firma">Firma</label>
+            <input type="text", name="firma", id="firma", size="20" required>
         </div>
     </fieldset>
 
-    <fieldset>
-        <div>
-            <label>endereco</label>
-            <input type="text", name="endereço", id="endereço", size="20">
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="endereço">Endereço</label>
+            <input type="text", name="endereço", id="endereço", size="20" required>
         </div>
 
-        <div>
-            <label>complemento</label>
+        <div class="campo">
+            <label for="complemento">Complemento</label>
             <input type="text", name="complemento", id="complemento", size="20">
         </div>
 
-        <div>
-            <label>bairro</label>
-            <input type="text", name="bairro", id="bairro", size="20">
+        <div class="campo">
+            <label for="bairro">Bairro</label>
+            <input type="text", name="bairro", id="bairro", size="20" required>
         </div>
 
-        <div>
-            <label>cidade</label>
-            <input type="text", name="cidade", id="cidade", size="20">
+        <div class="campo">
+            <label for="cidade">Cidade</label>
+            <input type="text", name="cidade", id="cidade", size="20" required>
         </div>
 
-        <div>
-            <label>UF</label>
-            <select>
+        <div class="campo">
+            <label for="uf">UF</label>
+            <select required>
                 <option value="">Selecione</option>
                 <option value="AC">Acre</option>
                 <option value="AL">Alagoas</option>
@@ -91,38 +92,49 @@
         </div>
     </fieldset>
 
-    <div>
-        <label>CEP</label>
-        <input type="text", name="CEP", id="CEP", size="20">
-    </div>
-
-    <div>
-        <label>CNPJ</label>
-        <input type="text", name="CNPJ", id="CNPJ", size="20">
-    </div>
-
-    <div>
-        <label>Inscr.</label>
-        <input type="text", name="Inscr", id="Inscr", size="20">
-    </div>
-
-    <fieldset>
-        <div>
-            <label>Tel.</label>
-            <input type="tel", name="Tel", id="Tel", size="20">
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="cep">CEP</label>
+            <input type="text", name="CEP", id="CEP", size="20" required>
+        </div>
+    
+        <div class="campo">
+            <label for="cnpj">CNPJ</label>
+            <input type="text", name="CNPJ", id="CNPJ", size="20" required>
+        </div>
+    
+        <div class="campo">
+            <label for="inscr">Inscr.</label>
+            <input type="text", name="Inscr", id="Inscr", size="20" required>
+        </div>
+    
+    </fieldset>
+    
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="tel">Tel.</label>
+            <input type="tel", name="Tel", id="Tel", size="20" required>
         </div>
 
-        <div>
-            <label>Celular</label>
+        <div class="campo">
+            <label for="celular">Celular</label>
             <input type="tel", name="Tel", size="20">
         </div>
 
-        <div>
-            <label>email</label>
+        <div class="campo">
+            <label for="email">Email</label>
             <input type="email", name="email", id="email", size="20">
         </div>
     </fieldset>
+
+    <div class="campo">
+        <br>
+        <label for="obs">OBS.:</label>
+        <textarea rows="6" style="width: 26em" id="observação" name="obs"></textarea>
+    </div>
     
+
+    <button class="botão" type="submit">Concluido</button>
 </form>
 
 </body>
