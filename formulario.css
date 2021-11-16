@@ -18,7 +18,7 @@
 #subtitulo{
     font-family: sans-serif;
     color: #6B8E23;
-    margin-left: 10%;
+    margin-left: 9%;
 }
 
 fieldset{
@@ -67,7 +67,7 @@ fieldset.grupo .campo{
 }
 
 .campo input:focus .campo select:focus .campo textarea:focus {
-    background: #e0e0e0;
+    background: #F8F8FF;
 }
 
 .botão{
